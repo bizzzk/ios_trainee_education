@@ -3,12 +3,12 @@
 let a = 15.0
 let b = 10.0
 
-var avarage = (a + b) / 2
+let avarage = (a + b) / 2
 
 
 // 2. Создать кортеж, и задать два любых строковых значения с названиями firstName и lastName. Далее необходимо вывести в консоль строку в формате "Full name: [firstName] [lastName]".
 
-var collection = (firstName: "Sergey", lastName: "Deryabin")
+let collection = (firstName: "Sergey", lastName: "Deryabin")
 
 print("Full name: \(collection.firstName) \(collection.lastName)")
 
@@ -44,11 +44,7 @@ while fibonacciNumbers.count < 15 {
 
 // 5. Напишите программу для сортировки массива, использующую метод пузырька. Сортировка должна происходить в отдельной функции, принимающей на вход исходный массив.
 
-var unsortedArray = [5, 3, 2, 9, 1, 7, 0]
-
-func sortingNumbers(in array: Array<Int>) {
-  var array = array
-  
+func sortingNumbers(in array: inout Array<Int>) {
   for i in 0..<array.count {
     let index = (array.count - 1) - i
     
@@ -72,10 +68,10 @@ let testString = "abc129"
 func increaseInt(of string: String) -> String {
   var mainString = string
   var intString = ""
-  let arrayOfNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  let numbers = "0"..."9"
   while mainString.count > 0 {
     if let lastSymbol = mainString.last {
-      if arrayOfNumbers.contains(String(lastSymbol)) {
+      if numbers.contains(String(lastSymbol)) {
         let string = String(lastSymbol)
         intString.append(string)
         mainString = String(mainString.dropLast())
