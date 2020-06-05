@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,50 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NFC-Pg-6bu">
+                                <rect key="frame" x="74" y="197" width="247" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Tez-Hi-FOU"/>
+                                    <constraint firstAttribute="width" constant="247" id="ql2-7O-hGA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simbirSoft" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-kL-sbn">
+                                <rect key="frame" x="122" y="603" width="116" height="15.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="4tN-ye-08D"/>
+                                    <constraint firstAttribute="height" constant="15.5" id="hx0-ty-drz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-Po-JNi">
+                                <rect key="frame" x="157" y="413" width="68" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="bl8-4z-L4q"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="n7o-eS-gcd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.28627450980392155" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="28" placeholderIntrinsicHeight="20" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LfV-iP-5Ip">
+                                <rect key="frame" x="177" y="379" width="21" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LfV-iP-5Ip" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3F9-uZ-BT9"/>
+                            <constraint firstItem="NFC-Pg-6bu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="177" id="8V3-AN-QdA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1dx-Po-JNi" secondAttribute="trailing" constant="150" id="CLH-eh-gCJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RnS-kL-sbn" secondAttribute="trailing" constant="137" id="HNz-tB-zpP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NFC-Pg-6bu" secondAttribute="trailing" constant="54" id="HfN-nR-Coh"/>
+                            <constraint firstItem="1dx-Po-JNi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="OOz-0B-gor"/>
+                            <constraint firstItem="NFC-Pg-6bu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="PhC-qL-Ihk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RnS-kL-sbn" secondAttribute="bottom" constant="48.5" id="Udf-2z-Wfo"/>
+                            <constraint firstItem="1dx-Po-JNi" firstAttribute="top" secondItem="LfV-iP-5Ip" secondAttribute="bottom" constant="14" id="aRE-0d-Llt"/>
+                            <constraint firstItem="LfV-iP-5Ip" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="hjf-dP-dvu"/>
+                            <constraint firstItem="RnS-kL-sbn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="jBP-XD-VC0"/>
+                            <constraint firstAttribute="bottom" secondItem="LfV-iP-5Ip" secondAttribute="bottom" constant="268" id="oFx-bM-yfy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +69,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="251" height="77"/>
+        <image name="simbirSoft" width="116" height="16"/>
+    </resources>
 </document>
