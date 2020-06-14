@@ -20,6 +20,7 @@
 		8426C01A247BF77C001D9F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426C018247BF77C001D9F06 /* Main.storyboard */; };
 		8426C01F247BF77E001D9F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426C01D247BF77E001D9F06 /* LaunchScreen.storyboard */; };
 		84C50B15248925E500B620BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C50B14248925E500B620BC /* Assets.xcassets */; };
+		84CA797C24968D700072C7C2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA797B24968D700072C7C2 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		8426C01E247BF77E001D9F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8426C020247BF77E001D9F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C50B14248925E500B620BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84CA797B24968D700072C7C2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		D30D6889437D7432D864A594 /* Pods_PartOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		841286D5248FB53C00E211F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				84CA797B24968D700072C7C2 /* CustomTabBarController.swift */,
 				841286D3248FB53400E211F4 /* HelpCategoryViewCell.swift */,
 			);
 			path = Models;
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8426C017247BF77C001D9F06 /* HelpViewController.swift in Sources */,
+				84CA797C24968D700072C7C2 /* CustomTabBarController.swift in Sources */,
 				841286D4248FB53400E211F4 /* HelpCategoryViewCell.swift in Sources */,
 				8426C015247BF77C001D9F06 /* AppDelegate.swift in Sources */,
 			);
