@@ -9,8 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Officinasansextraboldscc.otf">
-            <string>OfficinaSansExtraBoldSCC</string>
+        <array key="OfficinaSansExtraBoldC.ttf">
+            <string>OfficinaSansExtraBoldC</string>
         </array>
     </customFonts>
     <scenes>
@@ -19,9 +19,9 @@
             <objects>
                 <navigationController id="mG2-jz-squ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Помочь" id="d5G-fz-hEa">
-                        <inset key="imageInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
-                        <inset key="landscapeImageInsets" minX="0.0" minY="-4" maxX="0.0" maxY="0.0"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                        <inset key="imageInsets" minX="0.0" minY="-12" maxX="0.0" maxY="0.0"/>
+                        <inset key="landscapeImageInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b4g-gJ-x1c">
@@ -53,7 +53,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cof-DA-QWc">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="174" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -66,29 +66,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="174" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V7n-FN-jWL">
-                                                    <rect key="frame" x="60" y="55" width="59" height="28"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="V7n-FN-jWL">
+                                                    <rect key="frame" x="4" y="12" width="170" height="114"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXO-jf-kom">
-                                                    <rect key="frame" x="44" y="130" width="86" height="16"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="16" id="mm0-ng-xLo"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="OfficinaSansExtraBoldSCC" family="OfficinaSansExtraBoldSCC" pointSize="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXO-jf-kom">
+                                                    <rect key="frame" x="42" y="131.5" width="90" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="OfficinaSansExtraBoldC" family="OfficinaSansExtraBoldC" pointSize="15"/>
                                                     <color key="textColor" red="0.61960784313725492" green="0.74901960784313726" blue="0.31372549019607843" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="V7n-FN-jWL" firstAttribute="leading" secondItem="Vmk-ia-5dy" secondAttribute="leading" priority="750" constant="60" id="0bF-eh-ujP"/>
-                                            <constraint firstAttribute="trailing" secondItem="V7n-FN-jWL" secondAttribute="trailing" constant="55" id="3le-Fk-3Jn"/>
-                                            <constraint firstItem="V7n-FN-jWL" firstAttribute="top" secondItem="Vmk-ia-5dy" secondAttribute="top" priority="751" constant="55" id="6ac-kC-vcZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="XXO-jf-kom" secondAttribute="trailing" constant="44" id="Fts-c0-MWf"/>
-                                            <constraint firstItem="XXO-jf-kom" firstAttribute="leading" secondItem="Vmk-ia-5dy" secondAttribute="leading" constant="44" id="M7t-6S-BNq"/>
-                                            <constraint firstAttribute="bottom" secondItem="XXO-jf-kom" secondAttribute="bottom" constant="14" id="TKy-9g-xOD"/>
-                                            <constraint firstItem="XXO-jf-kom" firstAttribute="centerX" secondItem="Vmk-ia-5dy" secondAttribute="centerX" id="hkr-Wa-mWC"/>
-                                            <constraint firstItem="XXO-jf-kom" firstAttribute="top" secondItem="V7n-FN-jWL" secondAttribute="bottom" constant="47" id="mdV-jD-ea4"/>
+                                            <constraint firstItem="XXO-jf-kom" firstAttribute="top" secondItem="V7n-FN-jWL" secondAttribute="bottom" constant="5.5" id="7NZ-eo-xm1"/>
+                                            <constraint firstAttribute="bottom" secondItem="XXO-jf-kom" secondAttribute="bottom" constant="14" id="LYE-Hi-YDg"/>
+                                            <constraint firstItem="V7n-FN-jWL" firstAttribute="top" secondItem="Vmk-ia-5dy" secondAttribute="top" constant="12" id="Nk9-W6-SN2"/>
+                                            <constraint firstAttribute="trailing" secondItem="V7n-FN-jWL" secondAttribute="trailing" id="esI-96-GiB"/>
+                                            <constraint firstAttribute="trailing" secondItem="XXO-jf-kom" secondAttribute="trailing" constant="42" id="ttq-rn-1PS"/>
+                                            <constraint firstItem="XXO-jf-kom" firstAttribute="leading" secondItem="Vmk-ia-5dy" secondAttribute="leading" constant="42" id="vhG-ve-BLc"/>
+                                            <constraint firstItem="V7n-FN-jWL" firstAttribute="leading" secondItem="Vmk-ia-5dy" secondAttribute="leading" priority="750" constant="4" id="wPA-Rd-dQ9"/>
                                         </constraints>
                                         <size key="customSize" width="174" height="160"/>
                                         <connections>
@@ -102,15 +99,20 @@
                                     <outlet property="delegate" destination="qF4-Ff-v95" id="obU-nY-Eds"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Выберите категорию помощи" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXK-0I-khg">
-                                <rect key="frame" x="63" y="84" width="249" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <color key="textColor" red="0.28627450980392155" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="Выберите категорию помощи" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MXK-0I-khg">
+                                <rect key="frame" x="62" y="84" width="251" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.28627450980392155" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MXK-0I-khg" firstAttribute="top" secondItem="5vb-ZQ-V2V" secondAttribute="bottom" constant="20" id="FRu-FU-os6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MXK-0I-khg" secondAttribute="trailing" constant="46" id="SMC-AQ-v1p"/>
+                            <constraint firstItem="MXK-0I-khg" firstAttribute="leading" secondItem="i7g-z9-FTg" secondAttribute="leadingMargin" constant="46" id="Zdz-Z5-FwE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Ja2-NF-bab"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

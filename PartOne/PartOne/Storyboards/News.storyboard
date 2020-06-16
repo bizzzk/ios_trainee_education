@@ -14,8 +14,7 @@
             <objects>
                 <navigationController id="My5-xL-RZn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Новости" image="News" id="Ma2-S4-wCg">
-                        <inset key="imageInsets" minX="0.0" minY="-4" maxX="0.0" maxY="0.0"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xg7-xT-l3d">

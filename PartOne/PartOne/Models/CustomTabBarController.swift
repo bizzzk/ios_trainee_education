@@ -20,7 +20,7 @@ class CustomTabBarController: UITabBarController {
     let helpButton = UIButton(frame: CGRect(x: 0, y: 0, width: 54, height: 54))
     
     var helpButtonFrame = helpButton.frame
-    helpButtonFrame.origin.y = view.bounds.height - helpButtonFrame.height - 14
+    helpButtonFrame.origin.y = view.bounds.height - helpButtonFrame.height - 12
     helpButtonFrame.origin.x = view.bounds.width/2 - helpButtonFrame.size.width/2
     helpButton.frame = helpButtonFrame
     helpButton.layer.borderWidth = 6.0
@@ -33,6 +33,7 @@ class CustomTabBarController: UITabBarController {
                                            green: 225/255,
                                            blue: 225/255,
                                            alpha: 1.0).cgColor
+    
     
     view.addSubview(helpButton)
     
