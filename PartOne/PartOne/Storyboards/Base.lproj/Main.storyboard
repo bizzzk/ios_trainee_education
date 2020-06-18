@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dBJ-kj-WtD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dey-TP-57L">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,6 +14,7 @@
         <scene sceneID="Bal-uB-ifd">
             <objects>
                 <tabBarController id="dBJ-kj-WtD" customClass="CustomTabBarController" customModule="PartOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rqc-gc-Bj7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hkh-uF-2b4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -85,5 +87,60 @@
             </objects>
             <point key="canvasLocation" x="32" y="586"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="QGy-CQ-rHJ">
+            <objects>
+                <viewController id="Dey-TP-57L" customClass="LaunchScreenViewController" customModule="PartOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZK-yR-eoj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Lko-9O-zZv">
+                                <rect key="frame" x="70" y="197" width="251" height="77"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simbirSoft" translatesAutoresizingMaskIntoConstraints="NO" id="0ML-XA-fpn">
+                                <rect key="frame" x="122" y="602.5" width="116" height="16"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="i8F-dV-ILQ">
+                                <rect key="frame" x="172" y="364" width="35" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTK-aH-y14">
+                                <rect key="frame" x="157" y="413" width="74" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dAk-QZ-iRJ" firstAttribute="trailing" secondItem="PTK-aH-y14" secondAttribute="trailing" constant="144" id="4k7-zI-xLc"/>
+                            <constraint firstItem="0ML-XA-fpn" firstAttribute="leading" secondItem="dAk-QZ-iRJ" secondAttribute="leading" constant="122" id="Bsp-WA-hP2"/>
+                            <constraint firstItem="dAk-QZ-iRJ" firstAttribute="trailing" secondItem="i8F-dV-ILQ" secondAttribute="trailing" constant="168" id="CiM-uN-DrQ"/>
+                            <constraint firstItem="Lko-9O-zZv" firstAttribute="leading" secondItem="dAk-QZ-iRJ" secondAttribute="leading" constant="70" id="DZY-6U-6AS"/>
+                            <constraint firstItem="dAk-QZ-iRJ" firstAttribute="trailing" secondItem="Lko-9O-zZv" secondAttribute="trailing" constant="54" id="GAw-rT-LDr"/>
+                            <constraint firstItem="i8F-dV-ILQ" firstAttribute="top" secondItem="Lko-9O-zZv" secondAttribute="bottom" constant="90" id="Z3J-wI-sbr"/>
+                            <constraint firstItem="Lko-9O-zZv" firstAttribute="top" secondItem="dAk-QZ-iRJ" secondAttribute="top" constant="177" id="aKV-bF-vCO"/>
+                            <constraint firstItem="PTK-aH-y14" firstAttribute="top" secondItem="i8F-dV-ILQ" secondAttribute="bottom" constant="29" id="c9D-77-viJ"/>
+                            <constraint firstItem="dAk-QZ-iRJ" firstAttribute="bottom" secondItem="0ML-XA-fpn" secondAttribute="bottom" constant="48.5" id="mDz-CW-xvY"/>
+                            <constraint firstItem="i8F-dV-ILQ" firstAttribute="leading" secondItem="dAk-QZ-iRJ" secondAttribute="leading" constant="172" id="pDQ-bV-TFL"/>
+                            <constraint firstItem="PTK-aH-y14" firstAttribute="leading" secondItem="dAk-QZ-iRJ" secondAttribute="leading" constant="157" id="srl-vS-Zvw"/>
+                            <constraint firstItem="dAk-QZ-iRJ" firstAttribute="trailing" secondItem="0ML-XA-fpn" secondAttribute="trailing" constant="137" id="z3i-Al-qiw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dAk-QZ-iRJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="c1q-Ul-Wqu"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="i8F-dV-ILQ" id="grl-Fk-TZM"/>
+                        <segue destination="dBJ-kj-WtD" kind="show" identifier="showTabBar" animates="NO" id="DGe-Dw-7Ax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYa-vo-rr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1004" y="151"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="251" height="77"/>
+        <image name="simbirSoft" width="116" height="16"/>
+    </resources>
 </document>

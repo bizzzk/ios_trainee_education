@@ -10,6 +10,8 @@ import UIKit
 
 class CustomTabBarController: UITabBarController {
   
+  var emptyString = String()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
