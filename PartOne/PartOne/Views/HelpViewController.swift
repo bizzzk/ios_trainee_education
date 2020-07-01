@@ -9,13 +9,13 @@
 import UIKit
 import Alamofire
 
-class HelpViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+final class HelpViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
   
   private let reuseIdentifier = "categoryCell"
   private let minimumItemSpacing: CGFloat = 9
   private let sectionInsets = UIEdgeInsets(top: 0.0, left: 9.0, bottom: 0.0, right: 9.0)
   
-  var arrayViewModels = [CategoryCellViewModel]()
+  private var arrayViewModels = [CategoryCellViewModel]()
   
   
   override func viewDidLoad() {
@@ -41,12 +41,17 @@ class HelpViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
 extension HelpViewController: UICollectionViewDelegateFlowLayout {
   
-  func setupCells() {
-    arrayViewModels.append(CategoryCellViewModel(text: "Дети", imageURL: "helpcat1"))
-    arrayViewModels.append(CategoryCellViewModel(text: "Взрослые", imageURL: "helpcat2"))
-    arrayViewModels.append(CategoryCellViewModel(text: "Пожилые", imageURL: "helpcat3"))
-    arrayViewModels.append(CategoryCellViewModel(text: "Животные", imageURL: "helpcat4"))
-    arrayViewModels.append(CategoryCellViewModel(text: "Мероприятия", imageURL: "helpcat5"))
+  private func setupCells() {
+    arrayViewModels.append(contentsOf:
+      [CategoryCellViewModel(text: "Дети", imageURL: "helpcat1")])
+    arrayViewModels.append(contentsOf:
+      [CategoryCellViewModel(text: "Взрослые", imageURL: "helpcat2")])
+    arrayViewModels.append(contentsOf:
+      [CategoryCellViewModel(text: "Пожилые", imageURL: "helpcat3")])
+    arrayViewModels.append(contentsOf:
+      [CategoryCellViewModel(text: "Животные", imageURL: "helpcat4")])
+    arrayViewModels.append(contentsOf:
+      [CategoryCellViewModel(text: "Мероприятия", imageURL: "helpcat5")])
   }
   
   func collectionView(_ collectionView: UICollectionView,

@@ -8,10 +8,10 @@
 
 import UIKit
 
-class HelpCategoryViewCell: UICollectionViewCell {
+final class HelpCategoryViewCell: UICollectionViewCell {
   
-  @IBOutlet weak var helpCategoryImage: UIImageView!
-  @IBOutlet weak var helpCategoryLabel: UILabel!
+  @IBOutlet weak private var helpCategoryImage: UIImageView!
+  @IBOutlet weak private var helpCategoryLabel: UILabel!
 
   
   func bind(viewModel: CategoryCellViewModel) {

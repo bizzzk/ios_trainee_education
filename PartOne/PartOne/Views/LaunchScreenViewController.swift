@@ -8,32 +8,32 @@
 
 import UIKit
 
-class LaunchScreenViewController: UIViewController {
+final class LaunchScreenViewController: UIViewController {
   
-  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+  @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     setupActivityIndicator()
     
-    Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
+    Timer.scheduledTimer(timeInterval: 30.0, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
   }
   
-  func setupActivityIndicator() {
+  private func setupActivityIndicator() {
     animateActivityIndicator()
     setActivityIndicatorSize()
   }
   
-  func animateActivityIndicator() {
+  private func animateActivityIndicator() {
     activityIndicator.startAnimating()
   }
   
-  func setActivityIndicatorSize() {
+  private func setActivityIndicatorSize() {
     activityIndicator.scaleIndicator(factor: 1.8)
   }
   
-  @objc func timeToMoveOn() {
+  @objc private func timeToMoveOn() {
     self.performSegue(withIdentifier: "showTabBar", sender: self)
   }
   

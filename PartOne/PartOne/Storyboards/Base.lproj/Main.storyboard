@@ -15,7 +15,7 @@
             <objects>
                 <tabBarController id="dBJ-kj-WtD" customClass="CustomTabBarController" customModule="PartOne" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="rqc-gc-Bj7"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hkh-uF-2b4">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hkh-uF-2b4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +65,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcz-IC-dqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="609"/>
+            <point key="canvasLocation" x="-280" y="612"/>
         </scene>
         <!--History-->
         <scene sceneID="QDQ-ol-VJ8">
@@ -97,9 +97,15 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Lko-9O-zZv">
                                 <rect key="frame" x="70" y="197" width="251" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lko-9O-zZv" secondAttribute="height" multiplier="251:77" id="tw7-IV-Sit"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simbirSoft" translatesAutoresizingMaskIntoConstraints="NO" id="0ML-XA-fpn">
                                 <rect key="frame" x="122" y="602.5" width="116" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0ML-XA-fpn" secondAttribute="height" multiplier="29:4" id="mpD-Nv-s4K"/>
+                                </constraints>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="i8F-dV-ILQ">
                                 <rect key="frame" x="172" y="364" width="35" height="20"/>
@@ -131,7 +137,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="c1q-Ul-Wqu"/>
                     <connections>
                         <outlet property="activityIndicator" destination="i8F-dV-ILQ" id="grl-Fk-TZM"/>
-                        <segue destination="dBJ-kj-WtD" kind="show" identifier="showTabBar" animates="NO" id="DGe-Dw-7Ax"/>
+                        <segue destination="dBJ-kj-WtD" kind="show" identifier="showTabBar" id="DGe-Dw-7Ax"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYa-vo-rr4" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class CategoryCellViewModel {
+final class CategoryCellViewModel {
   
   var text = ""
   var imageURL = ""

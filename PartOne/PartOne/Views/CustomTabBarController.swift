@@ -8,9 +8,7 @@
 
 import UIKit
 
-class CustomTabBarController: UITabBarController {
-  
-  var emptyString = String()
+final class CustomTabBarController: UITabBarController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -18,13 +16,15 @@ class CustomTabBarController: UITabBarController {
     setupHelpButton()
   }
   
-  func setupHelpButton() {
+  private func setupHelpButton() {
     let helpButton = UIButton(frame: CGRect(x: 0, y: 0, width: 54, height: 54))
     
-    var helpButtonFrame = helpButton.frame
-    helpButtonFrame.origin.y = view.bounds.height - helpButtonFrame.height - 12
-    helpButtonFrame.origin.x = view.bounds.width/2 - helpButtonFrame.size.width/2
-    helpButton.frame = helpButtonFrame
+    if view.frame.height >= 800 {
+      helpButton.frame.origin.y = view.bounds.height - helpButton.frame.height - 46
+    } else {
+      helpButton.frame.origin.y = view.bounds.height - helpButton.frame.height - 12
+    }
+    helpButton.frame.origin.x = view.bounds.width/2 - helpButton.frame.size.width/2
     helpButton.layer.borderWidth = 6.0
     helpButton.layer.borderColor = UIColor.white.cgColor
     helpButton.layer.cornerRadius = 27

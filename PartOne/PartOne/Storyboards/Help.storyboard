@@ -20,7 +20,6 @@
                 <navigationController id="mG2-jz-squ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Помочь" id="d5G-fz-hEa">
                         <inset key="imageInsets" minX="0.0" minY="-12" maxX="0.0" maxY="0.0"/>
-                        <inset key="landscapeImageInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -48,9 +47,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ESm-Gy-Wgg">
-                                <rect key="frame" x="0.0" y="121" width="375" height="546"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ESm-Gy-Wgg">
+                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cof-DA-QWc">
                                     <size key="itemSize" width="174" height="160"/>
@@ -67,10 +65,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="V7n-FN-jWL">
-                                                    <rect key="frame" x="4" y="12" width="170" height="114"/>
+                                                    <rect key="frame" x="4" y="12" width="170" height="113.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXO-jf-kom">
-                                                    <rect key="frame" x="42" y="131.5" width="90" height="14.5"/>
+                                                    <rect key="frame" x="42" y="131" width="90" height="15"/>
                                                     <fontDescription key="fontDescription" name="OfficinaSansExtraBoldC" family="OfficinaSansExtraBoldC" pointSize="15"/>
                                                     <color key="textColor" red="0.61960784313725492" green="0.74901960784313726" blue="0.31372549019607843" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -111,7 +109,11 @@
                         <constraints>
                             <constraint firstItem="MXK-0I-khg" firstAttribute="top" secondItem="5vb-ZQ-V2V" secondAttribute="bottom" constant="20" id="FRu-FU-os6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MXK-0I-khg" secondAttribute="trailing" constant="46" id="SMC-AQ-v1p"/>
+                            <constraint firstAttribute="bottom" secondItem="ESm-Gy-Wgg" secondAttribute="bottom" id="TjO-oj-RMI"/>
                             <constraint firstItem="MXK-0I-khg" firstAttribute="leading" secondItem="i7g-z9-FTg" secondAttribute="leadingMargin" constant="46" id="Zdz-Z5-FwE"/>
+                            <constraint firstItem="ESm-Gy-Wgg" firstAttribute="leading" secondItem="i7g-z9-FTg" secondAttribute="leading" id="e0h-DW-e0M"/>
+                            <constraint firstItem="ESm-Gy-Wgg" firstAttribute="centerX" secondItem="MXK-0I-khg" secondAttribute="centerX" id="iNx-KH-EUx"/>
+                            <constraint firstItem="ESm-Gy-Wgg" firstAttribute="top" secondItem="MXK-0I-khg" secondAttribute="bottom" constant="17" id="qJl-Ag-HWK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Ja2-NF-bab"/>
