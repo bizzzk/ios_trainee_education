@@ -17,7 +17,7 @@ final class LaunchScreenViewController: UIViewController {
     
     setupActivityIndicator()
     
-    Timer.scheduledTimer(timeInterval: 30.0, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
+    Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
   }
   
   private func setupActivityIndicator() {
