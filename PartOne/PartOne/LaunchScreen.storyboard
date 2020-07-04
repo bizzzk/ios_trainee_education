@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AIp-G0-EuX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uoY-bX-WSp">
+            <objects>
+                <viewController id="AIp-G0-EuX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FNr-ny-fK6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="yzR-IS-YUA">
+                                <rect key="frame" x="70" y="197" width="251" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yzR-IS-YUA" secondAttribute="height" multiplier="251:77" id="Tu9-gK-7Vv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simbirSoft" translatesAutoresizingMaskIntoConstraints="NO" id="ApX-qW-Kja">
+                                <rect key="frame" x="122" y="602.5" width="116" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ApX-qW-Kja" secondAttribute="height" multiplier="29:4" id="eeh-q2-fhn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpH-hz-2d0">
+                                <rect key="frame" x="157" y="413" width="74" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tpH-hz-2d0" firstAttribute="leading" secondItem="veM-Yp-K0o" secondAttribute="leading" constant="157" id="1Hn-8V-izG"/>
+                            <constraint firstItem="veM-Yp-K0o" firstAttribute="trailing" secondItem="tpH-hz-2d0" secondAttribute="trailing" constant="144" id="JcV-dO-NXP"/>
+                            <constraint firstItem="veM-Yp-K0o" firstAttribute="bottom" secondItem="ApX-qW-Kja" secondAttribute="bottom" constant="48.5" id="Kis-h4-gow"/>
+                            <constraint firstItem="veM-Yp-K0o" firstAttribute="trailing" secondItem="ApX-qW-Kja" secondAttribute="trailing" constant="137" id="M2j-od-a7Y"/>
+                            <constraint firstItem="ApX-qW-Kja" firstAttribute="leading" secondItem="veM-Yp-K0o" secondAttribute="leading" constant="122" id="MEZ-3A-2Ff"/>
+                            <constraint firstItem="veM-Yp-K0o" firstAttribute="trailing" secondItem="yzR-IS-YUA" secondAttribute="trailing" constant="54" id="WWm-L9-Bf8"/>
+                            <constraint firstItem="yzR-IS-YUA" firstAttribute="leading" secondItem="veM-Yp-K0o" secondAttribute="leading" constant="70" id="iFy-4k-6E7"/>
+                            <constraint firstItem="yzR-IS-YUA" firstAttribute="top" secondItem="veM-Yp-K0o" secondAttribute="top" constant="177" id="kGb-FJ-XAf"/>
+                            <constraint firstItem="tpH-hz-2d0" firstAttribute="top" secondItem="yzR-IS-YUA" secondAttribute="bottom" constant="139" id="oyb-ue-rC2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="veM-Yp-K0o"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cre-3x-rTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="251" height="77"/>
+        <image name="simbirSoft" width="116" height="16"/>
+    </resources>
+</document>
